@@ -1,7 +1,5 @@
 # Energy Consumption Forecasting App
 
-[![Streamlit App](https://img.shields.io/badge/Streamlit-Live-brightgreen?logo=streamlit)](https://energyforecasting-aajwzyuo4hckc78xuhuznx.streamlit.app/)
-
 This Streamlit application predicts hourly electricity usage based on time-based features (hour, day, weekday, and month) using a trained LightGBM model.
 
 ---
