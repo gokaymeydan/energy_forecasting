@@ -1,4 +1,4 @@
-# ⚡ Energy Consumption Forecasting App
+# Energy Consumption Forecasting App
 
 [![Streamlit App](https://img.shields.io/badge/Streamlit-Live-brightgreen?logo=streamlit)](https://energyforecasting-aajwzyuo4hckc78xuhuznx.streamlit.app/)
 
@@ -6,31 +6,12 @@ This Streamlit application predicts hourly electricity usage based on time-based
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
-👉 Try it here: [https://gokaymeydan-energy-forecasting.streamlit.app](https://energyforecasting-aajwzyuo4hckc78xuhuznx.streamlit.app/)
+Try it here: [https://gokaymeydan-energy-forecasting.streamlit.app](https://energyforecasting-aajwzyuo4hckc78xuhuznx.streamlit.app/)
 
----
 
-## 📂 Project Structure
-
-```
-energy_forecasting/
-├── app/
-│   └── app.py                 # Streamlit app entry point
-├── src/
-│   ├── init.py                # Makes src a module
-│   ├── modelling.py           # Model loading logic
-│   └── preprocessing.py       # Data loading and preprocessing
-├── outputs/                   # Model evaluation results and prediction outputs
-├── data/                      
-├── requirements.txt           # Required packages
-└── README.md                  # Project overview
-```
-
----
-
-## 🚀 How to Run the App
+## How to Run the App
 
 1. **Clone the repo**  
 ```bash
@@ -57,7 +38,7 @@ streamlit run app/app.py
 
 ---
 
-## 📈 Outputs
+## Outputs
 
 After making predictions or evaluating the model, results will be saved under the `outputs/` folder:
 
@@ -68,19 +49,8 @@ After making predictions or evaluating the model, results will be saved under th
 
 ---
 
-## 🤖 Model
+## Model
 
 - Model: `LightGBMRegressor`
 - Features: `hour`, `day`, `weekday`, `month`
 - Trained in: `notebooks/` or previously saved as `model.pkl`
-
----
-
-## 🧩 Requirements
-
-streamlit
-pandas
-numpy
-matplotlib
-scikit-learn
-lightgbm
