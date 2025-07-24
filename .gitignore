@@ -1,4 +1,8 @@
+# Streamlit
 .streamlit/
+
+# Large data files
+data/hourly_power_consumption.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
