@@ -37,7 +37,7 @@ st.info(
     "Note: The predictions are based on a house located in Sceaux (7km of Paris, France) between December 2006 and November 2010 (47 months)"
 )
 
-future_dates = pd.date_range(start=dt, periods=168, freq="H")
+future_dates = pd.date_range(start=dt, periods=168, freq="h")
 future_df = pd.DataFrame({"Datetime": future_dates})
 future_df["hour"] = future_df["Datetime"].dt.hour
 future_df["day"] = future_df["Datetime"].dt.day
