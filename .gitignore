@@ -193,8 +193,7 @@ logs/
 
 # IDE specific files
 .idea/
-.vscode/settings.json
-.vscode/launch.json
+.vscode/
 *.swp
 *.swo
 *~
