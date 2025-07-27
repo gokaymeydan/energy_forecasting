@@ -1,54 +1,56 @@
 # Energy Consumption Forecasting App
 
-This Streamlit application predicts hourly electricity usage based on time-based features (hour, day, weekday, and month) using a trained LightGBM model.
+This application predicts hourly electricity usage based on time-based features such as hour, day, weekday, and month using a trained LightGBM model. The data used for training was sourced from an individual household’s energy consumption dataset available on the UCI Machine Learning Repository.
 
 ---
 
 ## Live Demo
 
-Try it here: [https://gokaymeydan-energy-forecasting.streamlit.app](https://energyforecasting-aajwzyuo4hckc78xuhuznx.streamlit.app/)
+Access the application on Hugging Face Spaces:  
+[https://huggingface.co/spaces/gokaymeydan/energy-forecasting](https://huggingface.co/spaces/gokaymeydan/energy-forecasting)
 
+---
 
-## How to Run the App
+## How to Run Locally
 
-1. **Clone the repo**  
+1. Clone the repository:
 ```bash
 git clone https://github.com/your-username/energy_forecasting.git
 cd energy_forecasting
 ```
 
-2. **(Optional) Create a virtual environment**
+2. (Optional) Create and activate a virtual environment:
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # macOS/Linux
-.venv\Scripts\activate     # Windows
+source .venv/bin/activate      # macOS/Linux
+.venv\Scripts\activate         # Windows
 ```
 
-3. **Install dependencies**
+3. Install the dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-4. **Run the app**
+4. Run the application:
 ```bash
-streamlit run app/app.py
+streamlit run app.py
 ```
 
 ---
 
-## Outputs
+## Output Files
 
-After making predictions or evaluating the model, results will be saved under the `outputs/` folder:
+After running predictions, results are saved to the `outputs/` folder:
 
-- `prediction_plot.png` – Real vs Predicted plot
-- `metrics.txt` – MAE and RMSE values
-- `predictions.csv` – Result of the selected datetime prediction
-- `train_results.csv` – Full dataset predictions
+- `prediction_plot.png` – Plot of actual vs predicted values
+- `metrics.txt` – Evaluation metrics (MAE, RMSE)
+- `predictions.csv` – Prediction result based on selected datetime
+- `train_results.csv` – Model predictions on the training set
 
 ---
 
-## Model
+## Model Details
 
-- Model: `LightGBMRegressor`
-- Features: `hour`, `day`, `weekday`, `month`
-- Trained in: `notebooks/` or previously saved as `model.pkl`
+- Model: LightGBMRegressor
+- Input Features: hour, day, weekday, month
+- Format: Trained model is saved as `model.pkl` and loaded during inference
