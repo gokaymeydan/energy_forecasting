@@ -4,7 +4,7 @@ This application predicts hourly electricity usage based on time-based features 
 
 ---
 
-## Live Demo
+## Live Demo    
 
 Access the application on Hugging Face Spaces:  
 [https://huggingface.co/spaces/gokaymeydan/energy-forecasting](https://huggingface.co/spaces/gokaymeydan/energy-forecasting)
