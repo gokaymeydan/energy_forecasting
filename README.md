@@ -36,7 +36,6 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
----
 
 ## Output Files
 
@@ -47,10 +46,11 @@ After running predictions, results are saved to the `outputs/` folder:
 - `predictions.csv` – Prediction result based on selected datetime
 - `train_results.csv` – Model predictions on the training set
 
----
 
-## Model Details
 
-- Model: LightGBMRegressor
-- Input Features: hour, day, weekday, month
-- Format: Trained model is saved as `model.pkl` and loaded during inference
+## Model Performance & Business Impact
+To justify the model complexity, I established a baseline using Linear Regression.
+
+* **Baseline (Linear Regression):** MAE: 0.585 | RMSE: 0.720
+* **Champion Model (LightGBM):** MAE: 0.440 | RMSE: 0.603
+* **Result:** The LightGBM model reduced the Mean Absolute Error (MAE) by **~25%**, significantly improving the accuracy of peak consumption forecasts compared to the linear baseline.
